@@ -18,7 +18,8 @@ provider_base_tools 是一个基于provider的封装，主要是为了简化prov
 
    provider_base_tools:
       git:
-        url: https://e.coding.net/km511928426/provider_base_tools/provider_base_tools.git  (推荐使用git方法集成)
+        url: https://github.com/km511928426/provider_base_tools.git  (推荐使用git方法集成)
+        ref: 0.0.4
    ```
 2. ### 使用
 
