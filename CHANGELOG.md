@@ -7,7 +7,7 @@
  * @FilePath: \provider_base_tools\CHANGELOG.md
  * @ObjectDescription: 
 -->
-## 0.0.5
+## 0.0.6
 
 # 基于provider的封装
 
