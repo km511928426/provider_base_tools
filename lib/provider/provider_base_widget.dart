@@ -3,8 +3,8 @@
  * @Version: 1.0
  * @Date: 2023-03-21 10:34:26
  * @LastEditors: cheng
- * @LastEditTime: 2023-06-12 14:27:36
- * @FilePath: \provider_base_tools\lib\provider\ProviderBaseWidget.dart
+ * @LastEditTime: 2023-06-13 10:03:55
+ * @FilePath: \provider_base_tools\lib\provider\provider_base_widget.dart
  * @ObjectDescription: Provider封装 (基类)
  */
 
@@ -15,11 +15,11 @@ import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
 import 'package:provider_base_tools/interface/base_widget.dart';
 
-import '../base/BaseArgementModel.dart';
-import '../base/BaseModel.dart';
-import '../interface/CustomFloatingActionButtonLocation.dart';
-import '../utils/ContextList.dart';
-import '../utils/OneContext.dart';
+import '../base/base_argment_model.dart';
+import '../base/base_model.dart';
+import '../interface/custom_floating_action_button_location.dart';
+import '../utils/context_list.dart';
+import '../utils/one_context.dart';
 
 typedef CancelAsync = void Function();
 

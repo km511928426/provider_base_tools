@@ -1,21 +1,9 @@
-/*
- * @Author: cheng
- * @Version: 1.0
- * @Date: 2023-05-27 13:54:04
- * @LastEditors: cheng
- * @LastEditTime: 2023-06-05 09:46:18
- * @FilePath: \provider_base_tools\lib\extension\ProviderSingleTickerProviderStateMixin.dart
- * @ObjectDescription: 
- */
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:flutter/widgets.dart';
 import 'package:provider_base_tools/provider_base_tools.dart';
 
-import '../base/BaseModel.dart';
-
-mixin ProviderSingleTickerProviderStateMixin<T> on BaseModel<T>
-    implements TickerProvider {
+mixin ProviderTickerProviderStateMixin on BaseModel implements TickerProvider {
   Set<Ticker>? _tickers;
 
   // @override
@@ -192,7 +180,7 @@ mixin ProviderSingleTickerProviderStateMixin<T> on BaseModel<T>
 class _WidgetTicker extends Ticker {
   _WidgetTicker(super.onTick, this._creator, {super.debugLabel});
 
-  final ProviderSingleTickerProviderStateMixin _creator;
+  final ProviderTickerProviderStateMixin _creator;
 
   @override
   void dispose() {

@@ -3,17 +3,17 @@
  * @Version: 1.0
  * @Date: 2023-05-26 15:07:17
  * @LastEditors: cheng
- * @LastEditTime: 2023-06-05 11:52:15
- * @FilePath: \provider_base_tools\lib\base\BaseModel.dart
+ * @LastEditTime: 2023-06-13 09:39:56
+ * @FilePath: \provider_base_tools\lib\base\base_model.dart
  * @ObjectDescription: 管理页面的状态基类
  */
 
 // * 页面状态枚举
 import 'package:flutter/foundation.dart';
 import 'package:provider/provider.dart';
+import 'package:provider_base_tools/extension/get_lifecycle_mixin.dart';
 
-import '../extension/GetLifeCycleMixin.dart';
-import '../provider/ProviderBaseWidget.dart';
+import '../provider/provider_base_widget.dart';
 
 enum ViewState {
   loading,

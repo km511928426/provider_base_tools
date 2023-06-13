@@ -3,7 +3,7 @@
  * @Version: 1.0
  * @Date: 2023-05-26 15:03:04
  * @LastEditors: cheng
- * @LastEditTime: 2023-06-05 17:31:39
+ * @LastEditTime: 2023-06-13 10:02:55
  * @FilePath: \provider_base_tools\README.md
  * @ObjectDescription:  项目说明
 -->
@@ -14,12 +14,12 @@ provider_base_tools 是一个基于provider的封装，主要是为了简化prov
 1. ### 安装 (推荐 git 方式集成, 方便更新.  配合provider_temp_gen模板生成器使用提升开发效率)
    ```
    dependencies:
-     provider_base_tools: ^0.0.1 (暂时没有发布pub仓库,现这种方式无法集成)
+     provider_base_tools: ^0.0.5 (暂时没有发布pub仓库,现这种方式无法集成)
 
    provider_base_tools:
       git:
         url: https://github.com/km511928426/provider_base_tools.git  (推荐使用git方法集成)
-        ref: 0.0.4
+        ref: 0.0.5
    ```
 2. ### 使用
 
@@ -103,7 +103,8 @@ provider_base_tools 是一个基于provider的封装，主要是为了简化prov
    | InitBaseStatelessWidget | 用于创建页面 |
    | BaseWidget | 用于定义默认布局 |
    | GetLefeCycleMixin | 自定义生命周期 (暂未完善) |
-   | ProviderSingleTickerProviderStateMixin | 自定义TickerProvider (方便model使用TickerProviderStateMixin) |
+   | ProviderSingleTickerProviderStateMixin | 自定义单个TickerProvider (方便model使用TickerProviderStateMixin) |
+   | ProviderTickerProviderStateMixin | 自定义多个个TickerProvider (方便model使用TickerProviderStateMixin) |
    | CustomFloatingActionButtonLocation | 自定义FloatingActionButtonLocation位置 |
    | KeepAliveWarpperWidget | 状态保活页面 |
    | WillPopScopeWidget | 对于WillPopScope的封装 |

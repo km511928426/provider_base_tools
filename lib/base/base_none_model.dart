@@ -8,8 +8,8 @@
  * @ObjectDescription: 页面没有可交互数据时，显示baseNoneModel
  */
 // * 页面没有可交互数据时，显示baseNoneModel
-import '../provider/ProviderBaseWidget.dart';
-import 'BaseModel.dart';
+import '../provider/provider_base_widget.dart';
+import 'base_model.dart';
 
 class BaseNoneModel extends BaseModel<BaseNoneState> {
   BaseNoneModel.getInstance(super.initial) : super.getInstance();

@@ -1,6 +1,6 @@
 name: provider_base_tools
 description: provider封装插件 (建议与provider_temp_gen一起使用)
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/km511928426/provider_base_tools
 repository: https://github.com/km511928426/provider_base_tools
 
