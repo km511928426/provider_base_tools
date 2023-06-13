@@ -15,12 +15,12 @@ provider_base_tools 是一个基于provider的封装，主要是为了简化prov
    provider_tem_gen [使用文档](https://github.com/km511928426/provider_temp_gen/blob/main/README.md)
    ```
    dependencies:
-     provider_base_tools: ^0.0.9
+     provider_base_tools: ^0.1.0
 
    provider_base_tools:
       git:
         url: https://github.com/km511928426/provider_base_tools.git
-        ref: 0.0.9
+        ref: 0.1.0
    ```
 2. ### 使用
 
