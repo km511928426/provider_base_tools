@@ -3,7 +3,7 @@
  * @Version: 1.0
  * @Date: 2023-05-26 15:03:04
  * @LastEditors: cheng
- * @LastEditTime: 2023-06-13 10:19:47
+ * @LastEditTime: 2023-06-13 18:09:02
  * @FilePath: \provider_base_tools\README.md
  * @ObjectDescription:  项目说明
 -->
@@ -11,15 +11,15 @@
 
 provider_base_tools 是一个基于provider的封装，主要是为了简化provider的使用，提高开发效率。
 
-1. ### 安装 (推荐 git 方式集成, 方便更新.  配合provider_temp_gen模板生成器使用提升开发效率)
+1. ### 安装 (推荐 git 方式集成, 方便更新.  配合[provider_temp_gen](https://github.com/km511928426/provider_temp_gen.git)模板生成器使用提升开发效率)
    ```
    dependencies:
-     provider_base_tools: ^0.0.8
+     provider_base_tools: ^0.0.9
 
    provider_base_tools:
       git:
         url: https://github.com/km511928426/provider_base_tools.git
-        ref: 0.0.8
+        ref: 0.0.9
    ```
 2. ### 使用
 
