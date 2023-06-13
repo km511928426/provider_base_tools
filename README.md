@@ -3,7 +3,7 @@
  * @Version: 1.0
  * @Date: 2023-05-26 15:03:04
  * @LastEditors: cheng
- * @LastEditTime: 2023-06-13 10:12:00
+ * @LastEditTime: 2023-06-13 10:19:47
  * @FilePath: \provider_base_tools\README.md
  * @ObjectDescription:  项目说明
 -->
@@ -103,8 +103,8 @@ provider_base_tools 是一个基于provider的封装，主要是为了简化prov
    | InitBaseStatelessWidget | 用于创建页面 |
    | BaseWidget | 用于定义默认布局 |
    | GetLefeCycleMixin | 自定义生命周期 (暂未完善) |
-   | ProviderSingleTickerProviderStateMixin | 自定义单个TickerProvider (方便model使用TickerProviderStateMixin) |
-   | ProviderTickerProviderStateMixin | 自定义多个个TickerProvider (方便model使用TickerProviderStateMixin) |
+   | ProviderSingleTickerProviderStateMixin | 自定义单个TickerProvider (方便model使用TickerProviderStateMixin,初始化ticker对象) |
+   | ProviderTickerProviderStateMixin | 自定义多个个TickerProvider (方便model使用TickerProviderStateMixin,初始化ticker对象) |
    | CustomFloatingActionButtonLocation | 自定义FloatingActionButtonLocation位置 |
    | KeepAliveWarpperWidget | 状态保活页面 |
    | WillPopScopeWidget | 对于WillPopScope的封装 |
