@@ -12,10 +12,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class WillPopScopeWidget extends StatefulWidget {
-  final Widget child; // * 包裹的widget
-  final bool douleClick; // * 是否双击退出
-  final Object? argment; // * 返回的参数
-  final WillPopCallback? onWillPop; // * 自定义点击事件
+  final Widget child; // 包裹的widget
+  final bool douleClick; // 是否双击退出
+  final Object? argment; // 返回的参数
+  final WillPopCallback? onWillPop; // 自定义点击事件
   const WillPopScopeWidget(
       {required this.child,
       this.douleClick = true,

@@ -8,7 +8,7 @@
  * @ObjectDescription: 管理页面的状态基类
  */
 
-// * 页面状态枚举
+// 页面状态枚举
 import 'package:flutter/foundation.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_base_tools/extension/get_lifecycle_mixin.dart';
@@ -22,11 +22,11 @@ enum ViewState {
   none,
 }
 
-// * 管理页面的状态基类
+// 管理页面的状态基类
 abstract class BaseModel<T> extends ChangeNotifier
     with GetLifeCycleMixin
     implements ReassembleHandler {
-  // * 单例模式
+  // 单例模式
   @protected
   BaseModel.getInstance(T initial) : super() {
     _setState = initial;
@@ -46,26 +46,26 @@ abstract class BaseModel<T> extends ChangeNotifier
 
   final _futures = <VoidAsyncFunction>[];
 
-  // * 保存异步方法
+  // 保存异步方法
   @protected
   List<VoidAsyncFunction> initFutures();
 
-  // * 判断数据是否为空
+  // 判断数据是否为空
   @protected
   bool get dataIsEmpty;
 
   ViewState viewState = ViewState.none;
 
-  // * 存储错误信息
+  // 存储错误信息
   Exception? _exception;
 
   Exception? get exception => _exception;
 
-  // * 一般外部不会直接调用，而是通过setState来调用
-  // * 但是如果外部需要直接调用，可以通过这个方法来调用
+  // 一般外部不会直接调用，而是通过setState来调用
+  // 但是如果外部需要直接调用，可以通过这个方法来调用
   // ViewState get state => _state;
 
-  // * 改变状态通知页面刷新
+  // 改变状态通知页面刷新
   void setState(void Function() fn) {
     try {
       fn();
@@ -77,9 +77,9 @@ abstract class BaseModel<T> extends ChangeNotifier
 
 mixin BaseModelMixxin on BaseModel {}
 
-// * 对BaseModel的扩展
+// 对BaseModel的扩展
 extension BaseModelExtension on BaseModel {
-  // * 初始化所有状态以及执行异步方法
+  // 初始化所有状态以及执行异步方法
   void _initFutures() {
     viewState = ViewState.loading;
     _futures.addAll(initFutures());
@@ -100,7 +100,7 @@ extension BaseModelExtension on BaseModel {
     }
   }
 
-  // * 刷新所有数据与状态
+  // 刷新所有数据与状态
   void refresh() {
     setLoading();
     _futures.clear();

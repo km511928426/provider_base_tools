@@ -19,13 +19,13 @@ class BaseWidget {
 
   BaseWidget._();
 
-  // * 加载动画
+  // 加载动画
   Widget Function(BuildContext context) loadingWidget =
       (context) => const Center(
             child: CircularProgressIndicator(),
           );
 
-  // * 默认错误页面
+  // 默认错误页面
   Widget Function(BuildContext context, BaseModel model) errorWidget =
       (BuildContext context, BaseModel model) => Center(
             child: Column(
@@ -51,7 +51,7 @@ class BaseWidget {
             ),
           );
 
-  // * 空白 widget
+  // 空白 widget
   Widget Function(BuildContext context) emptyWidget = (context) => const Center(
         child: Text('页面为空'),
       );

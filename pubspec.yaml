@@ -1,6 +1,6 @@
 name: provider_base_tools
-description: provider封装插件 (建议与provider_temp_gen一起使用)
-version: 0.0.7
+description: 基于provider封装插件 (建议与provider_temp_gen模板生成器一起使用)
+version: 0.0.8
 homepage: https://github.com/km511928426/provider_base_tools
 repository: https://github.com/km511928426/provider_base_tools
 
@@ -35,15 +35,15 @@ flutter:
   # This is required for using `dart:ffi`.
   # All these are used by the tooling to maintain consistency when
   # adding or updating assets for this project.
-  plugin:
-    platforms:
+  # plugin:
+  #   platforms:
     # This plugin project was generated without specifying any
     # platforms with the `--platform` argument. If you see the `some_platform` map below, remove it and
     # then add platforms following the instruction here:
     # https://flutter.dev/docs/development/packages-and-plugins/developing-packages#plugin-platforms
     # -------------------
-      some_platform:
-        pluginClass: somePluginClass
+      # some_platform:
+      #   pluginClass: somePluginClass
     # -------------------
 
   # To add assets to your plugin package, add an assets section, like this:

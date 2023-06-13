@@ -15,7 +15,7 @@ class TestBaseArgemnt extends BaseArgementModel {
 }
 
 void main() {
-  // * 自定义全局widget
+  // 自定义全局widget
   // BaseWidget.getInstance
   //   ..loadingWidget = ((context) => const Center(
   //         child: Text('重新自定义加载'),
@@ -46,11 +46,11 @@ class DemoModel extends BaseModel<DemoState> {
   DemoModel.getInstance(super.initial) : super.getInstance();
 
   @override
-  bool get dataIsEmpty => false; // * 页面显示状态根据此值判断
+  bool get dataIsEmpty => false; // 页面显示状态根据此值判断
 
   @override
   List<VoidAsyncFunction> initFutures() {
-    // * 所有的初始化异步方法 (例如:第一次进来的网络请求)
+    // 所有的初始化异步方法 (例如:第一次进来的网络请求)
     return [];
   }
 }

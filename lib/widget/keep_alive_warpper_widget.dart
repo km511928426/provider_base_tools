@@ -11,8 +11,8 @@
 import 'package:flutter/material.dart';
 
 class KeepAliveWarpperWidget extends StatefulWidget {
-  final bool keepAlive; // * 是否保持状态
-  final Widget child; // * 包裹的widget
+  final bool keepAlive; // 是否保持状态
+  final Widget child; // 包裹的widget
   const KeepAliveWarpperWidget(
       {required this.child, this.keepAlive = true, super.key});
 

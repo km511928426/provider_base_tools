@@ -14,12 +14,12 @@ provider_base_tools 是一个基于provider的封装，主要是为了简化prov
 1. ### 安装 (推荐 git 方式集成, 方便更新.  配合provider_temp_gen模板生成器使用提升开发效率)
    ```
    dependencies:
-     provider_base_tools: ^0.0.7 (暂时没有发布pub仓库,现这种方式无法集成)
+     provider_base_tools: ^0.0.8
 
    provider_base_tools:
       git:
-        url: https://github.com/km511928426/provider_base_tools.git  (推荐使用git方法集成)
-        ref: 0.0.7
+        url: https://github.com/km511928426/provider_base_tools.git
+        ref: 0.0.8
    ```
 2. ### 使用
 
@@ -58,10 +58,10 @@ provider_base_tools 是一个基于provider的封装，主要是为了简化prov
      DemoModel.getInstance(super.initial) : super.getInstance();
 
      @override
-     bool get dataIsEmpty => false; // * 页面显示状态根据此值判断
+     bool get dataIsEmpty => false; // 页面显示状态根据此值判断
      
      @override
-     List<VoidAsyncFunction> initFutures() { // * 所有的初始化异步方法 (例如:第一次进来的网络请求)
+     List<VoidAsyncFunction> initFutures() { // 所有的初始化异步方法 (例如:第一次进来的网络请求)
        return [];
      }
    }

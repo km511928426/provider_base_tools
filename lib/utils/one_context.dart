@@ -15,7 +15,7 @@ class OneContext {
 
   /// The almost top root context of the app,
   /// use it carefully or don't use it directly!
-  /// * 当前页面顶层context
+  /// 当前页面顶层context
   BuildContext get context {
     assert(ContextList.getInstance.contextList.isNotEmpty, '无法找到当前Context');
     if (!hasContext) {
@@ -41,7 +41,7 @@ class OneContext {
   static bool get hasContext => ContextList.getInstance.contextList.isNotEmpty;
   // set context(BuildContext? newContext) => _context = newContext;
 
-  // * 当前页面body的context
+  // 当前页面body的context
   BuildContext? childContext;
 
   bool get haschildContext => childContext != null;
