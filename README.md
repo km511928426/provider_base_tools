@@ -48,7 +48,7 @@ provider_base_tools 是一个基于provider的封装，主要是为了简化prov
    2.3.1. 创建一个state类 用于存储数据,与view,model进行交互
    ```
     class DemoState {
-     TestState();
+     DemoState();
      }
    ```
    
@@ -79,9 +79,6 @@ provider_base_tools 是一个基于provider的封装，主要是为了简化prov
       DemoModel getModel() {
         return DemoModel.getInstance(DemoState());
       }
-
-      @override
-      void onReady() {}
 
       @override
       Widget successedBuilder(BuildContext context) {
