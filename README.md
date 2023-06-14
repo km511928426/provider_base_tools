@@ -3,7 +3,7 @@
  * @Version: 1.0
  * @Date: 2023-05-26 15:03:04
  * @LastEditors: cheng
- * @LastEditTime: 2023-06-13 18:25:25
+ * @LastEditTime: 2023-06-14 09:58:56
  * @FilePath: \provider_base_tools\README.md
  * @ObjectDescription:  项目说明
 -->
@@ -11,8 +11,8 @@
 
 provider_base_tools 是一个基于provider的封装，主要是为了简化provider的使用，提高开发效率。
 
-1. ### 安装 (推荐 git 方式集成, 方便更新.  配合[provider_temp_gen](https://github.com/km511928426/provider_temp_gen/blob/main/README.md)模板生成器使用提升开发效率)
-   provider_tem_gen [使用文档](https://github.com/km511928426/provider_temp_gen/blob/main/README.md)
+1. ### 安装 (推荐 git 方式集成, 方便更新.  配合[provider_temp_gen](https://pub-web.flutter-io.cn/packages/provider_temp_gen)模板生成器使用提升开发效率)
+   provider_tem_gen [使用文档](https://pub-web.flutter-io.cn/packages/provider_temp_gen)
    ```
    dependencies:
      provider_base_tools: ^0.1.0
@@ -20,7 +20,7 @@ provider_base_tools 是一个基于provider的封装，主要是为了简化prov
    provider_base_tools:
       git:
         url: https://github.com/km511928426/provider_base_tools.git
-        ref: 0.1.0
+        ref: 0.1.1
    ```
 2. ### 使用
 

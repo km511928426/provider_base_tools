@@ -1,6 +1,6 @@
 name: provider_base_tools
-description: 基于provider封装插件 (建议与provider_temp_gen模板生成器一起使用)
-version: 0.1.0
+description: Based on the provider encapsulation plugin (recommended to be used in conjunction with the provider_temp_gen template generator to greatly improve development efficiency)
+version: 0.1.1
 homepage: https://github.com/km511928426/provider_base_tools
 repository: https://github.com/km511928426/provider_base_tools
 
