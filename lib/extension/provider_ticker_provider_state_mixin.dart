@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:provider_base_tools/provider_base_tools.dart';
 
-mixin ProviderTickerProviderStateMixin on BaseModel implements TickerProvider {
+mixin ProviderTickerProviderStateMixin<T> on BaseModel<T>
+    implements TickerProvider {
   Set<Ticker>? _tickers;
 
   // @override

@@ -3,7 +3,7 @@
  * @Version: 1.0
  * @Date: 2023-06-13 14:27:15
  * @LastEditors: cheng
- * @LastEditTime: 2023-06-13 14:37:48
+ * @LastEditTime: 2023-06-14 11:26:06
  * @FilePath: \provider_base_tools\example\lib\main.dart
  * @ObjectDescription: 
  */
@@ -42,7 +42,8 @@ class DemoState {
   DemoState();
 }
 
-class DemoModel extends BaseModel<DemoState> {
+class DemoModel extends BaseModel<DemoState>
+    with ProviderTickerProviderStateMixin {
   DemoModel.getInstance(super.initial) : super.getInstance();
 
   @override

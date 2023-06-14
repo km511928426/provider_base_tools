@@ -3,7 +3,7 @@
  * @Version: 1.0
  * @Date: 2023-05-27 13:54:04
  * @LastEditors: cheng
- * @LastEditTime: 2023-06-13 09:58:20
+ * @LastEditTime: 2023-06-14 11:27:49
  * @FilePath: \provider_base_tools\lib\extension\provider_single_ticker_provider_state_mixin.dart
  * @ObjectDescription: 多个ticker的管理
  */
@@ -12,7 +12,7 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter/widgets.dart';
 import 'package:provider_base_tools/provider_base_tools.dart';
 
-mixin ProviderSingleTickerProviderStateMixin on BaseModel
+mixin ProviderSingleTickerProviderStateMixin<T> on BaseModel<T>
     implements TickerProvider {
   Ticker? _ticker;
 
