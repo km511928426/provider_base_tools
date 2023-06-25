@@ -23,6 +23,7 @@ export 'package:provider_base_tools/interface/custom_floating_action_button_loca
 export 'package:flutter/gestures.dart';
 export 'package:provider_base_tools/widget/keep_alive_warpper_widget.dart';
 export 'package:provider_base_tools/widget/will_pop_scope_widget.dart';
+export 'package:provider_base_tools/widget/block_keep_alive_warpper_widget.dart';
 // export 'package:provider_base_tools/provider_base_tools.dart';
 // export 'package:provider_base_tools/provider_base_tools_platform_interface.dart';
 
