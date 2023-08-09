@@ -364,9 +364,8 @@ abstract class InitBaseStatelessWidget<T extends BaseModel, S>
   @override
   ProviderWidgetBuilder _onBodyBuiler() => (context) => _ProviderBaseWidget(
         builder: (context, model, child) {
-          OneContext.getInstance.childContext == null
-              ? OneContext.getInstance.childContext = context
-              : null;
+          OneContext.getInstance.childContext = null;
+          OneContext.getInstance.childContext == null ? OneContext.getInstance.childContext = context : null;
           if (model.viewState == ViewState.loading) {
             return showScaffold
                 ? getScaffold(context, loadingBuilder(context))

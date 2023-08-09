@@ -76,8 +76,7 @@ mixin ProviderTickerProviderStateMixin<T> on BaseModel<T>
   }
 
   void _updateTickerModeNotifier() {
-    final ValueNotifier<bool> newNotifier =
-        TickerMode.getNotifier(OneContext.getInstance.context);
+    final ValueNotifier<bool> newNotifier = TickerMode.getNotifier(OneContext.getInstance.context);
     if (newNotifier == _tickerModeNotifier) {
       return;
     }
