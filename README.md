@@ -3,7 +3,7 @@
  * @Version: 1.0
  * @Date: 2023-05-26 15:03:04
  * @LastEditors: cheng
- * @LastEditTime: 2023-06-25 14:15:31
+ * @LastEditTime: 2023-10-26 09:47:46
  * @FilePath: \provider_base_tools\README.md
  * @ObjectDescription:  项目说明
 -->
@@ -15,7 +15,7 @@ provider_base_tools 是一个基于provider的封装，主要是为了简化prov
    provider_tem_gen [使用文档](https://pub-web.flutter-io.cn/packages/provider_temp_gen)
    ```
    dependencies:
-     provider_base_tools: ^0.1.4
+     provider_base_tools: ^0.1.5
 
    ```
 2. ### 使用

@@ -7,6 +7,10 @@
  * @FilePath: \provider_base_tools\CHANGELOG.md
  * @ObjectDescription: 
 -->
+## 0.1.5
+
+# update ProviderTickerProviderStateMixin Type
+
 ## 0.1.4
 
 # Remove warning,Modifying Context Nesting Issues
