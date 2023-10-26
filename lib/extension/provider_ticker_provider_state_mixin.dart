@@ -56,7 +56,7 @@ mixin ProviderTickerProviderStateMixin<T> on BaseModel<T>
     _tickers!.remove(ticker);
   }
 
-  ValueNotifier<bool>? _tickerModeNotifier;
+  ValueListenable<bool>? _tickerModeNotifier;
 
   // @override
   // void activate() {
@@ -76,7 +76,8 @@ mixin ProviderTickerProviderStateMixin<T> on BaseModel<T>
   }
 
   void _updateTickerModeNotifier() {
-    final ValueNotifier<bool> newNotifier = TickerMode.getNotifier(OneContext.getInstance.context);
+    final ValueListenable<bool> newNotifier =
+        TickerMode.getNotifier(OneContext.getInstance.context);
     if (newNotifier == _tickerModeNotifier) {
       return;
     }
