@@ -15,7 +15,7 @@ provider_base_tools 是一个基于provider的封装，主要是为了简化prov
    provider_tem_gen [使用文档](https://pub-web.flutter-io.cn/packages/provider_temp_gen)
    ```
    dependencies:
-     provider_base_tools: ^0.1.5
+     provider_base_tools: ^0.1.6
 
    ```
 2. ### 使用

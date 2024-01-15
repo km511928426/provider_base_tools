@@ -3,10 +3,14 @@
  * @Version: 1.0
  * @Date: 2023-06-12 15:47:57
  * @LastEditors: cheng
- * @LastEditTime: 2023-06-14 11:28:29
+ * @LastEditTime: 2024-01-15 16:57:06
  * @FilePath: \provider_base_tools\CHANGELOG.md
  * @ObjectDescription: 
 -->
+## 0.1.6
+
+# Compatible with higher versions
+
 ## 0.1.5
 
 # update ProviderTickerProviderStateMixin Type
